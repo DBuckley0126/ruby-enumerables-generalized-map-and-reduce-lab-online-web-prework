@@ -33,7 +33,6 @@ def reduce(source_array, starting_point)
       i += 1
     end
     
-
   else
       
     output = starting_point
@@ -47,12 +46,3 @@ def reduce(source_array, starting_point)
 end
 
 # reduce([1,2,3,4]) {|memo, n| memo && n}
-
-    output = starting_point
-    
-    while i < source_array.length do
-      output = yield(source_array[i], output)
-      i += 1
-    end
-    
-    return output
