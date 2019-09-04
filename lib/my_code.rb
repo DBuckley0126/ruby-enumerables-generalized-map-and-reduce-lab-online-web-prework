@@ -10,4 +10,8 @@ def map(source_array)
   return new
 end
 
+
+#reduce
+
+
 def rescue()
