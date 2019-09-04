@@ -27,10 +27,10 @@ def reduce(source_array, starting_point=0)
   total = starting_point
   i = 0
   while i < source_array.length do
-    yield(total =)
+    yield(total =,)
     i += 1
   end
   return total
 end
 
-reduce([1,2,3,4], 3) { |b,n| b + n}
+# reduce([1,2,3,4], 3) { |array, point| point + array}
