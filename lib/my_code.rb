@@ -23,19 +23,15 @@ end
  # return total
 #end
 
-def reduce(source_array, starting_point)
-  i = 0
+def reduce(source_array, starting_point=nil)
   
-  if starting_point = nil
-    
-    while i < source_array.length do
-      return yield(source_array[i])
-      i += 1
-    end
-    
-  else
-      
+  if starting_point
+    i = 0
     output = starting_point
+  else
+    i = 1
+    output = source_array[0]
+  output = starting_point
       
     while i < source_array.length do
       output = yield(source_array[i], output)
