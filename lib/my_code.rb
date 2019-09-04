@@ -35,4 +35,4 @@ def reduce(source_array, starting_point=0)
 return answer
 end
 
-# reduce([1,2,3,4]) {|memo, n| memo + n}
+# reduce([1,2,3,4]) {|memo, n| memo && n}
