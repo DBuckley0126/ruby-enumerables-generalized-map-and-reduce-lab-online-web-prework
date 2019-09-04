@@ -28,8 +28,13 @@ def reduce(source_array, starting_point=0)
   i = 0
   
   while i < source_array.length do
+    
     total = yield(source_array[i], total)
     i += 1
+    
+    if total = false
+    return false
+    end
   end
 return total
 end
