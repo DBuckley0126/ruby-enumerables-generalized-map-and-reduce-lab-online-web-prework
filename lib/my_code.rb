@@ -36,10 +36,13 @@ def reduce(source_array, starting_point)
 
   else
       
+    output = starting_point
+      
     while i < source_array.length do
-      return yield(source_array[i])
+      output = yield(source_array[i], output)
       i += 1
     end
+    return output  
   end  
 end
 
