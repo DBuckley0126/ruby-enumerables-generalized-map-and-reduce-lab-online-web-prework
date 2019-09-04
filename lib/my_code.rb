@@ -25,14 +25,13 @@ end
 
 def reduce(source_array, starting_point=0)
   total = starting_point
-  answer =
   i = 0
+  
   while i < source_array.length do
-    answer = yield(source_array[i], total)
-    total = answer
+    total = yield(source_array[i], total)
     i += 1
   end
-return answer
+return total
 end
 
 # reduce([1,2,3,4]) {|memo, n| memo && n}
