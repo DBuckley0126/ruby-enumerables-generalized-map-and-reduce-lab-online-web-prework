@@ -33,4 +33,4 @@ def reduce(source_array, starting_point=0)
   return total
 end
 
-# reduce([1,2,3,4], 3) { |b, n| }
+# reduce([1,2,3,4]) {|memo, n| memo && n}
