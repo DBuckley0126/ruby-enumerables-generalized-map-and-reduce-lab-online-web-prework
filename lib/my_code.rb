@@ -38,7 +38,6 @@ def reduce(source_array, starting_point=nil)
       i += 1
     end
     return output  
-  end  
 end
 
 # reduce([1,2,3,4]) {|memo, n| memo && n}
