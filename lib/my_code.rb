@@ -28,7 +28,7 @@ def reduce(source_array, starting_point=0)
   answer =
   i = 0
   while i < source_array.length do
-    total = yield(source_array[i], total)
+    answer = yield(source_array[i], total)
     i += 1
   end
 return total
