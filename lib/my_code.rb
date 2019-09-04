@@ -34,6 +34,8 @@ def reduce(source_array, starting_point=0)
     
     if total = false
     return false
+  else
+    return total
     end
   end
 return total
