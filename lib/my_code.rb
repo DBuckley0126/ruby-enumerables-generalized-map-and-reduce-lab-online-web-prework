@@ -27,10 +27,10 @@ def reduce(source_array, starting_point=0)
   total = starting_point
   i = 0
   while i < source_array.length do
-    total = yield(source_array[i], total)
+    return total = yield(source_array[i], total)
     i += 1
   end
-  return total
+
 end
 
 # reduce([1,2,3,4]) {|memo, n| memo && n}
