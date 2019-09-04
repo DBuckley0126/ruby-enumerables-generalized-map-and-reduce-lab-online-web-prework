@@ -32,11 +32,6 @@ def reduce(source_array, starting_point=0)
     total = yield(source_array[i], total)
     i += 1
     
-    if total = false
-    return false
-  else
-    return total
-    end
   end
 return total
 end
