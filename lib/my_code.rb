@@ -23,10 +23,10 @@ end
  # return total
 #end
 
-def reduce(source_array, starting_point=nil)
+def reduce(source_array, starting_point)
   i = 0
   
-  if starting_point = true 
+  if starting_point = !nil
     
     output = starting_point
     
