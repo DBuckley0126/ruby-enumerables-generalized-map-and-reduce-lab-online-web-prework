@@ -26,16 +26,14 @@ end
 def reduce(source_array, starting_point)
   i = 0
   
-  if starting_point = !nil
-    
-    output = starting_point
+  if starting_point = nil
     
     while i < source_array.length do
-      output = yield(source_array[i], output)
+      return yield(source_array[i])
       i += 1
     end
     
-    return output
+
   else
       
     while i < source_array.length do
@@ -46,3 +44,12 @@ def reduce(source_array, starting_point)
 end
 
 # reduce([1,2,3,4]) {|memo, n| memo && n}
+
+    output = starting_point
+    
+    while i < source_array.length do
+      output = yield(source_array[i], output)
+      i += 1
+    end
+    
+    return output
